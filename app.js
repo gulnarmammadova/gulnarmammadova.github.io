@@ -48,6 +48,25 @@ class TaskManager {
                 this.toggleView()
             }
         })
+
+        document.querySelector(`#sortButton`).addEventListener('mouseenter', (e)=> {
+            if (!document.querySelector('.desc').classList.contains('hidden')) {
+                document.querySelector('.desc').classList.add('hidden')
+                document.querySelector('.desc-act').classList.remove('hidden')
+            } else if (!document.querySelector('.asc').classList.contains('hidden')) {
+                document.querySelector('.asc').classList.add('hidden')
+                document.querySelector('.asc-act').classList.remove('hidden')
+            }
+        })
+        document.querySelector(`#sortButton`).addEventListener('mouseleave', (e)=> {
+            if (!document.querySelector('.desc-act').classList.contains('hidden')) {
+                document.querySelector('.desc').classList.remove('hidden')
+                document.querySelector('.desc-act').classList.add('hidden')
+            } else if (!document.querySelector('.asc-act').classList.contains('hidden')) {
+                document.querySelector('.asc').classList.remove('hidden')
+                document.querySelector('.asc-act').classList.add('hidden')
+            }
+        })
     }
 
     renderTasks() {
@@ -90,10 +109,10 @@ class TaskManager {
         this.isAscending = !this.isAscending;
         if(!this.isAscending) {
             document.querySelectorAll('img').forEach(i => i.classList.add('hidden'))
-            document.querySelector('.asc-act').classList.remove('hidden')
+            document.querySelector('.asc').classList.remove('hidden')
         } else {
             document.querySelectorAll('img').forEach(i => i.classList.add('hidden'))
-            document.querySelector('.desc-act').classList.remove('hidden')
+            document.querySelector('.desc').classList.remove('hidden')
         }
 
         this.renderTasks();
