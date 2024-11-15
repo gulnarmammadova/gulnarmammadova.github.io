@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+       
+  <div class="task-tracker">
+    <div class="yellow"></div>
+    <div class="header">
+      <h2>To-Do List</h2>
+    </div>
+    <div class="sort">
+      <button id="sortButton" class="sort-btn">
+        <img class="sort asc" src="img_/pict4.svg" alt="Sort Tasks">
+        <img class="sort asc-act" src="img_/pict1.svg" alt="Sort Tasks">
+        <img class="sort desc-act" src="img_/pict3.svg" alt="Sort Tasks">
+        <img class="sort desc" src="img_/pict2.svg" alt="Sort Tasks">
+      </button>
+    </div>
+
+    <div id="addTaskContainer" class="task-list">
+       <div class="task">
+        <input required placeholder="Add a new note" type="text">
+       <button id="new-delete" class="delete-btn">✕</button>
+       </div>
+    </div>
+
+    <ol id="taskList" class="task-list">
+    </ol>
+
+    <button class="add-button" id="addTaskButton">
+      <div class="icon">+</div>
+      <div class="add-label">Add</div>
+    </button>
+  </div>
+
+  <script src="app.js" ></script>
+</body>
+</html>
