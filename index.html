@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valyuta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="menu-items hidden">
+        <div class="menu-links">
+            <button id="close-btn">⛌</button>
+            <button>войти</button>
+            <a href="###" class="menu-item">Банк</a>
+            <a href="###" class="menu-item">Бизнес</a>
+            <a href="###" class="menu-item">Инвестиции</a>
+            <a href="###" class="menu-item">Страхование</a>
+            <a href="###" class="menu-item">Мобайл</a>
+            <a href="###" class="menu-item">Путешествия</a>
+            <a href="###" class="menu-item">Развлечения</a>
+        </div>
+    </div>
+    <header>
+        <div class="header-words">
+            <div class="logo">
+                <img src="img/logo.svg" alt="logo">
+            </div>
+            <div class="links">
+                <div class="item">Банк</div>
+                <div class="item">Бизнес</div>
+                <div class="item">Инвестиции</div>
+                <div class="item">Страхование</div>
+                <div class="item">Мобайл</div>
+                <div class="item">Путешествия</div>
+                <div class="item">Развлечения</div>
+            </div>
+            <div id="login-btn" class="item1">Вочти</div>
+            <div class="item1 item1-mobile">меню</div>
+        </div>
+    </header>
+
+    <div class="words">
+        Конвертер валют онлайн
+    </div>
+
+    <div class="input-container">
+        <div class="input1">
+            <p class="a">У меня есть</p>
+            <div class="valyuta1 tabs">
+                <button class="active">RUB</button>
+                <button>USD</button>
+                <button>EUR</button>
+                <button>GBP</button>
+            </div>
+            <br>
+            <div class="input-wrapper">
+                <input type="text" value="" class="inputbox1">
+                <div class="current-value"></div>
+            </div>
+        </div>
+
+        <div class="input2">
+            <p class="b">Хочу приобрести</p>
+            <div class="valyuta2 tabs">
+                <button>RUB</button>
+                <button class="active">USD</button>
+                <button>EUR</button>
+                <button>GBP</button>
+            </div>
+            <br>
+            <div class="input-wrapper">
+                <input type="text" value="" class="inputbox2">
+                <div class="current-value"></div>
+            </div>
+        </div>
+    </div>
+    <div id="result" style="margin-top: 20px; font-size: 20px; color: red;  text-align: center;"></div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
